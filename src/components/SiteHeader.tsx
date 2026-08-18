@@ -21,10 +21,10 @@ export function SiteHeader() {
             Home
           </Link>
           <Link
-            to="/submissions"
+            to="/admin"
             className="rounded-md px-3 py-1.5 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground [&.active]:bg-secondary [&.active]:text-foreground"
           >
-            Submissions
+            Admin
           </Link>
         </nav>
       </div>

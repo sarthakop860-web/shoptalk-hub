@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useRef, useState } from "react";
 import { CheckCircle2, FileUp, Loader2, Presentation, UploadCloud } from "lucide-react";
 
@@ -164,9 +164,6 @@ function Index() {
 
               <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:justify-center">
                 <Button onClick={reset}>Submit Another Presentation</Button>
-                <Button asChild variant="outline">
-                  <Link to="/submissions">View Submissions</Link>
-                </Button>
               </div>
             </div>
           ) : (
