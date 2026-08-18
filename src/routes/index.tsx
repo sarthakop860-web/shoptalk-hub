@@ -88,7 +88,7 @@ function Index() {
       // 3. Upload the file to storage
       const { error: uploadError } = await supabase.storage
         .from("presentations")
-        .upload(filePath, file, { contentType: file.type || undefined });
+        .upload(filePath, file);
       if (uploadError) throw uploadError;
 
       // 4. Save the submission details in the database
