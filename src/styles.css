@@ -146,3 +146,31 @@
     color: var(--color-foreground);
   }
 }
+
+@theme inline {
+  --font-sans: var(--font-sans);
+  --shadow-card: var(--shadow-card);
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@utility card-surface {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-card);
+}
+
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+@utility animate-rise {
+  animation: rise-in 0.5s ease-out both;
+}
