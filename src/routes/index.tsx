@@ -164,9 +164,6 @@ function Index() {
 
               <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:justify-center">
                 <Button onClick={reset}>Submit Another Presentation</Button>
-                <Button asChild variant="outline">
-                  <Link to="/submissions">View Submissions</Link>
-                </Button>
               </div>
             </div>
           ) : (
