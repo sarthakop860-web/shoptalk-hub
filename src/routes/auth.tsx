@@ -93,7 +93,7 @@ function AuthPage() {
             <Input
               id="password"
               type="password"
-              autoComplete={mode === "signup" ? "new-password" : "current-password"}
+              autoComplete="current-password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
@@ -107,47 +107,14 @@ function AuthPage() {
               {error}
             </p>
           )}
-          {notice && (
-            <p className="rounded-lg bg-secondary px-3 py-2 text-sm text-muted-foreground">
-              {notice}
-            </p>
-          )}
 
           <Button type="submit" className="w-full" disabled={busy}>
             {busy && <Loader2 className="size-4 animate-spin" />}
-            {mode === "signup" ? "Create admin account" : "Sign in"}
+            Sign in
           </Button>
 
           <p className="text-center text-xs text-muted-foreground">
-            {mode === "signin" ? (
-              <>
-                First time here?{" "}
-                <button
-                  type="button"
-                  className="font-medium text-primary underline-offset-2 hover:underline"
-                  onClick={() => {
-                    setMode("signup");
-                    setError(null);
-                  }}
-                >
-                  Create the admin account
-                </button>
-              </>
-            ) : (
-              <>
-                Already have an account?{" "}
-                <button
-                  type="button"
-                  className="font-medium text-primary underline-offset-2 hover:underline"
-                  onClick={() => {
-                    setMode("signin");
-                    setError(null);
-                  }}
-                >
-                  Sign in
-                </button>
-              </>
-            )}
+            Access is restricted to the site administrator.
           </p>
         </form>
       </main>
