@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useRef, useState } from "react";
 import { CheckCircle2, FileUp, Loader2, Presentation, UploadCloud } from "lucide-react";
 
