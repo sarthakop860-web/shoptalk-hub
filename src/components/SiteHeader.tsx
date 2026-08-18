@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { Presentation } from "lucide-react";
 
+import { ThemeToggle } from "@/components/ThemeToggle";
+
 /** Minimal shared header with the app name and two nav links. */
 export function SiteHeader() {
   return (

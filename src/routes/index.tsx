@@ -163,7 +163,7 @@ function Index() {
               </dl>
 
               <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:justify-center">
-                <Button onClick={reset}>Submit Another Presentation</Button>
+                <Button onClick={reset}>Back to Home</Button>
               </div>
             </div>
           ) : (
